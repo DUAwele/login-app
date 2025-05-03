@@ -25,7 +25,7 @@ function Registeration(){
                 </div>
                 <div>
                 <label id="password" className='text-light' >Password</label>
-                <input className='form-control' type="text" placeholder="" onChange={(e) => {setPasswordReg(e.target.value)}} />
+                <input className='form-control' type="password" placeholder="" onChange={(e) => {setPasswordReg(e.target.value)}} />
                 </div>
                 <button onClick={register} className="btn btn-warning">Register</button>
 
