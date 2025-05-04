@@ -17,7 +17,8 @@ function Registeration(){
     }
 
     return(
-        <div className='bg-dark bg-gradient'>
+        <div className=' bg-gradient d-flex justify-content-center align-items-center '>
+            <div className='p-3 bg-dark w-25'>
             <form id="register" onSubmit={(e) => e.preventDefault()} >
                 <div>
                 <label id="user" className='text-light' >Username</label>
@@ -30,6 +31,7 @@ function Registeration(){
                 <button onClick={register} className="btn btn-warning">Register</button>
 
             </form>
+            </div>
         </div>
 
     );

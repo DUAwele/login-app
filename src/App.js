@@ -5,6 +5,7 @@ import Registeration from './Registeration';
 import Login from './Login';
 import './App.css';
 
+
 function App() {
   return (
     <Router>

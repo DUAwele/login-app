@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
+import './Login.css'
 
 
 function Login(){
@@ -35,7 +36,7 @@ function Login(){
             </div>
             <div>
             <label id="" className='text-light' >Password</label>
-            <input className='form-control' type="text" name="" placeholder="" onChange={(e) => {setPassword(e.target.value)}}/>
+            <input className='form-control' type="password" name="" placeholder="" onChange={(e) => {setPassword(e.target.value)}}/>
             </div>
             <button onClick={login} className="btn btn-warning">Login</button>
 
