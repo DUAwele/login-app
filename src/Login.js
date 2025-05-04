@@ -13,7 +13,7 @@ function Login(){
         const [loginStatus, setLoginstatus] = useState('')
 
         function login(){
-            axios.post("http://localhost:3000/api/login", {User: Username, password: Password
+            axios.post("https://37a38820-92f5-4e8c-a03a-b7c0d149d2bc-00-iwdajyn5aymx.spock.replit.dev/api/login", {User: Username, password: Password
             }).then((response) => {
                 if (response.data.message){
                     setLoginstatus(response.data.message)

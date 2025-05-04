@@ -9,7 +9,7 @@ function Registeration(){
     const [passwordReg , setPasswordReg] = useState('')
 
     function register(){
-        axios.post("http://localhost:3000/api/register", {User: userReg, password: passwordReg
+        axios.post("https://37a38820-92f5-4e8c-a03a-b7c0d149d2bc-00-iwdajyn5aymx.spock.replit.dev/api/register", {User: userReg, password: passwordReg
         }).then((response) => {
             console.log(response);
         })
