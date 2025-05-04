@@ -23,12 +23,16 @@ function Login(){
                 
             })
 
+            alert('Welcome '+ Username)
+
+
         }
     
 
 
     return(
-        <div className='bg-dark bg-gradient'>
+        <div className='bg-gradient d-flex justify-content-center align-items-center mt-3'>
+            <div className='p-3 bg-dark w-25'>
         <form id="Login" onSubmit={(e) => e.preventDefault()} >
             <div>
             <label id="" className='text-light' >Username</label>
@@ -38,9 +42,10 @@ function Login(){
             <label id="" className='text-light' >Password</label>
             <input className='form-control' type="password" name="" placeholder="" onChange={(e) => {setPassword(e.target.value)}}/>
             </div>
-            <button onClick={login} className="btn btn-warning">Login</button>
+            <button onClick={login} className="btn btn-light text-dark mt-2">Login</button>
 
         </form>
+        </div>
     </div>
 
     )

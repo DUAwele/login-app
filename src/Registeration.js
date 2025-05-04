@@ -14,10 +14,12 @@ function Registeration(){
             console.log(response);
         })
 
+        alert('Thank you for signing up')
+
     }
 
     return(
-        <div className=' bg-gradient d-flex justify-content-center align-items-center '>
+        <div className=' bg-gradient d-flex justify-content-center align-items-center mt-3 '>
             <div className='p-3 bg-dark w-25'>
             <form id="register" onSubmit={(e) => e.preventDefault()} >
                 <div>
@@ -28,7 +30,7 @@ function Registeration(){
                 <label id="password" className='text-light' >Password</label>
                 <input className='form-control' type="password" placeholder="" onChange={(e) => {setPasswordReg(e.target.value)}} />
                 </div>
-                <button onClick={register} className="btn btn-warning">Register</button>
+                <button onClick={register} className="btn btn-light text-dark mt-2">Register</button>
 
             </form>
             </div>
